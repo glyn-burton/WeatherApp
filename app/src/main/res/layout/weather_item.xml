@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tvHour"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:layout_marginStart="12dp"
+        android:text="Hour"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+    <ImageView
+        android:id="@+id/imWeatherPic"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/fog"
+        android:layout_marginStart="12dp"
+        app:layout_constraintTop_toBottomOf="@id/tvHour"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/tvWeatherDecript"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:text = "WeatherDescription"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imWeatherPic"/>
+
+    <TextView
+        android:id="@+id/tvHighLow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text = "High/Low"
+        app:layout_constraintTop_toBottomOf="@id/tvWeatherDecript"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
